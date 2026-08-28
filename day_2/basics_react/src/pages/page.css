@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Betania+Patmos&display=swap');;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Asap Sharp", sans-serif;
+}
+.main-content{
+    background-color: bisque;
+    align-items: center;
+    border-radius: 20px;
+}
+.main-content h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+}
+.main-content p{
+    margin: 20px;
+}
+.main-content .hero{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.main-content p{
+    font-size: 20px;
+}
