@@ -1,0 +1,50 @@
+.container{
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: lightskyblue;
+} 
+.stopwatch{
+    font-size: 50px;
+    color: red;
+} 
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+}
+#start{
+    background-color: #28a745;
+    color: white;
+} 
+#reset{
+    background-color: #007bff;
+    color: white;
+}
+#stop{
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Hover Effect */
+button:not(:disabled):hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+button:disabled{
+    opacity: 0.25;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
