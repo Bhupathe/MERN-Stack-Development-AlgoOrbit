@@ -52,7 +52,7 @@ stopEI.addEventListener('click', function(){
 resetEI.addEventListener('click', function(){
     resetTime();
 
-    startEI.disable = false;
+    startEI.disabled = false;
     resetEI.disabled = true;
     stopEI.disabled = true;
 });
