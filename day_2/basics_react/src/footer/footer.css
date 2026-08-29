@@ -1,10 +1,30 @@
 .footer{
     background-color: black;
+    color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.footer .hero{
+    display: flex;
+    justify-content: space-around;
+}
+
 .footer h2{
     text-align: center;
-    color: white;
+    padding-bottom: 20px;
+}
 
-    padding: 20px;
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    width: 300px;
+    height: 300px;
+    text-align: center;
 }

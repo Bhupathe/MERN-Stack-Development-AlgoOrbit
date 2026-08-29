@@ -1,10 +1,27 @@
 import Navbar from '../navbar/navbar'
 import Footer from '../footer/footer';
-import Hero1 from './hero/hero1';
-import Hero2 from './hero/hero2';
+// import Hero1 from './hero/hero1';
+// import Hero2 from './hero/hero2';
+import Hero from './hero/hero'
+import tang_san from './hero/assets/main_char_1.jpg'
+import xiao_wu from './hero/assets/main_char_2.jpg'
+import Contact from '../contact/contact';
 import './page.css'
 
 export default function Page(){
+    const hero = {
+        tang_san: {
+            name: 'Tang San',
+            description: "Tang San is the main protagonist of the 'Soul Land' (Douluo Dalu) Series. He was a former young prodigy and an outer sect disciple of the renowned Tang Sect who successfully learnt the Tang Sect's core skills which was ostracized and not allowed to the outer sect disciples despite the fact that none of the core disciples were able to. Following his death, he was reborn while maintaining his past memories as the son of the Clear Sky Douluo, Tang Hao of the Clear Sky Clan, and Blue Silver Empress Ah Yin.",
+            image: tang_san
+        },
+        xiao_wu: {
+            name: 'Xiao Wu',
+            description: "Xiao Wu is a 100,000+ year old Soft Boned Rabbit and later becomes a 2nd Class God with the position of Rabbit Goddess. She is the wife of Sea God Tang San, the scabbard of Asura God Tang San, the mother of Tang Wutong and Tang Wulin, and the grandmother of Tang Xuanyu, Dai Ying, and Huo Zhanji.",
+            image: xiao_wu
+        },
+    }
+
     return(
         <div className="main-content">
             <Navbar />
@@ -17,10 +34,16 @@ export default function Page(){
 
             <br /> 
             {/* ------------------ Hero Content -------------------- */}
+            <h2>Main Characters</h2>
             <div className='hero'>
-                <Hero1 />
-                <Hero2 />
+                {Object.entries(hero).map(([key, value]) => (
+                    <Hero key={key} hero={value} />
+                ))}
             </div>
+            <br />
+
+            {/* -------------------------- Contact -----------------------*/}
+            <Contact />
 
             <br />
             {/* --------------------- Footer --------------------------- */}

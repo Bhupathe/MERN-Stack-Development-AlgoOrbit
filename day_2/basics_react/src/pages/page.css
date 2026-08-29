@@ -28,3 +28,8 @@
 .main-content p{
     font-size: 20px;
 }
+
+.main-content h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
