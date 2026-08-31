@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+.roboto-slab{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: #6C7AC7;
+    font-family: "Roboto Slab", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.main-container{
+    background-color: lightblue;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.main-container h1{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+.main-container h3{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+
+    color: red;
+} 
+.main-container .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 70%;
+    height: 50%;
+}
+.main-container .btn input{
+    width: 30%;
+    height: 20%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+
+    font-size: 20px;
+} 
+.main-container .btn input:hover{
+    background-color: lightgrey;
+    transform: translateY(-2px);
+}
+.main-container .btn input:active{
+    background-color: white;
+} 
+#counter{
+    font-size: 25px;
+    margin-top: 20px;
+} 
+#reset-counter{
+    margin-bottom: 20px;
+}
+
+
+/* ---------------- blink animation ----------------------- */ 
+.blink{
+    animation: blink 0.5s;
+} 
+@keyframes blink{
+    0%{
+	opacity: 1;
+    } 
+    50%{
+	opacity: 0;
+    } 
+    100%{
+	opacity: 1;
+    }
+} 
+
